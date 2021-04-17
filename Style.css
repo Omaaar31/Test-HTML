@@ -1,0 +1,167 @@
+h1 {
+    color:red;
+    font-size: 250%;
+    border: black groove;
+    border-bottom:5px brown groove;
+    border-top: 5px brown groove;
+    text-align: center;
+    margin: 60px;
+    padding: 40px;
+}
+
+h2 {
+    color:green;
+    font-size:200%;
+    text-decoration: underline;
+    background-color: blanchedalmond;
+    width: 200px; 
+    margin: auto;
+}
+
+p {
+    font-family: mono;
+    font-size: 120%;
+    /* opacity: à tester */
+    border-radius: 20px/30px;
+    text-shadow:6px 6px 6px black;
+    margin: 20px 20px;
+    overflow: unset;
+    word-wrap:normal
+}
+
+ul, ol{
+    font-style: italic;
+}
+
+.lien{
+    font-weight: 640;
+}
+
+.ytb, a{
+    color:blue;
+    font-size: 90%
+}
+
+#list{
+    color: grey
+}
+
+h2 em{
+    color: orangered;
+    font-size: 90%
+}
+
+p strong{
+    font-family: cursive
+}
+
+p mark{
+    font-family: 'Franklin Gothic Medium'
+}
+
+span + p{
+    color:blue
+}
+
+a [title] { 
+    color: rebeccapurple 
+} /* pas compris  */
+
+.imagefloat{
+    float:right
+} /* à tester */
+
+body{
+    background-image: url("https://s.w.org/plugins/geopattern-icon/background-per-page_f7f7f7.svg");
+    background-attachment: scroll;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+img{
+border-radius: 20px;
+border: 5px rgb(0, 204, 255) groove;
+border-right: 5px dashed rgb(0, 204, 255);
+border-left: 5px dashed rgb(0, 204, 255);
+}
+
+a:hover{
+text-decoration: dotted;    
+color: crimson
+}
+
+p:hover{
+    text-decoration: overline;
+    color: black;
+}
+
+a:active{
+    background-color: white;
+}
+
+a:focus{
+    background-color: red;
+}
+
+a:visited{
+    color:seagreen
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black
+}
+
+iframe{
+    width: 250px;
+    height: 250px;;
+}
+
+:required{
+    border-color: red;
+}
+
+div{
+    width: 200px;  
+    height: 200px;
+    background-color: green;
+    transition: background-color 6s ease; 
+                    /*ou*/
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-delay: 0.6s;
+                    /*ou*/
+    transition: background-color 2s ease, width 1s linear;
+}
+
+div:hover{
+    background-color: red;
+    width: 500px;
+}
+
+@keyframes masuperanimation{  /*decrire ce que va faire l'animation mais n'a aucun effet*/
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translateX(150px);
+    }
+    100%{
+        transform: translateX(150px) rotate(30turn);
+    }
+}
+
+div{
+    margin: 100px;
+    width: 200px;
+    height: 150px;
+    background-color: mediumblue;
+}
+
+div:hover{
+    animation: masuperanimation 2s;
+}
+
